@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: rgba(217, 217, 217, 0.639);
+}
+
+.container {
+    display: grid;
+    place-content: center;
+    width: 800px;
+    height: 450px;
+    grid-template-columns: 450px 350px;
+    background-color: white;
+}
+
+.sub-heading, .main-head {
+    font-size: 40px;
+    margin: 0;
+}
+
+.head {
+    margin-top: 50px;
+    width: 200px;
+    line-height: 40px;
+}
+
+.description p {
+    font-size: 13px;
+    color: hsl(0, 36%, 70%);
+    line-height: 30px;
+}
+
+.sub-head {
+    color: hsl(0, 36%, 70%);
+}
+
+.email-input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+.submit-btn {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: hsl(0, 36%, 70%);
+    position: relative;
+    left: 230px;
+    bottom: 40px;
+}
+
+.desktop-image {
+    display: block;
+    width: 350px;
+    height: 450px;
+    margin-top: 8px;
+}
+
+.mobile-image {
+    display: none;
+}
+
+.content-sec {
+   padding: 30px 70px 70px 70px;
+}
+
+.brand-logo {
+    width: 100px;
+}
+
+@media screen and (max-width: 450px) {
+    .desktop-image {
+        display: none;
+    }
+    
+    .mobile-image {
+        display: block;
+        width: 375px;
+    }
+
+    body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        text-align: center;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 375px;
+        height: auto;
+        background-color: white;
+    }
+
+    .email-input {
+        width: 200px;
+        height: 40px;
+    }
+
+    .submit-btn {
+        position: relative;
+        left: 65px;
+    }
+    
+    .brand-logo {
+        margin-right: 40px;
+        text-align: left;
+        padding: 30px 0 10px 30px;
+        }
+    
+    
+}
